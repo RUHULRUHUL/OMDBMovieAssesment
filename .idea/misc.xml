@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/java for android project/Complite Full PRoject/BugBd Personal Project/Photography/Cool Photography/app/src/main/res/drawable/circle.xml" value="0.1975" />
+        <entry key="..\:/java for android project/Complite Full PRoject/BugBd Personal Project/Photography/Cool Photography/app/src/main/res/drawable/custom_shape.xml" value="0.1975" />
+        <entry key="..\:/java for android project/Complite Full PRoject/BugBd Personal Project/Photography/Cool Photography/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/java for android project/Complite Full PRoject/BugBd Personal Project/Photography/Cool Photography/app/src/main/res/drawable/round_oval_shape.xml" value="0.159" />
+        <entry key="..\:/java for android project/Complite Full PRoject/BugBd Personal Project/Photography/Cool Photography/app/src/main/res/layout/activity_main.xml" value="0.14" />
+        <entry key="..\:/java for android project/Complite Full PRoject/BugBd Personal Project/Photography/Cool Photography/app/src/main/res/layout/activity_main2.xml" value="0.20416666666666666" />
+        <entry key="..\:/java for android project/Complite Full PRoject/BugBd Personal Project/Photography/Cool Photography/app/src/main/res/layout/activity_nav_drawer.xml" value="0.20416666666666666" />
+        <entry key="..\:/java for android project/Complite Full PRoject/BugBd Personal Project/Photography/Cool Photography/app/src/main/res/layout/activity_video_play.xml" value="0.16" />
+        <entry key="..\:/java for android project/Complite Full PRoject/BugBd Personal Project/Photography/Cool Photography/app/src/main/res/layout/category_row_item.xml" value="0.18" />
+        <entry key="..\:/java for android project/Complite Full PRoject/BugBd Personal Project/Photography/Cool Photography/app/src/main/res/layout/content_nav_drawer.xml" value="0.20416666666666666" />
+        <entry key="..\:/java for android project/Complite Full PRoject/BugBd Personal Project/Photography/Cool Photography/app/src/main/res/layout/custom_shape.xml" value="0.203125" />
+        <entry key="..\:/java for android project/Complite Full PRoject/BugBd Personal Project/Photography/Cool Photography/app/src/main/res/layout/fragment_categories.xml" value="0.14" />
+        <entry key="..\:/java for android project/Complite Full PRoject/BugBd Personal Project/Photography/Cool Photography/app/src/main/res/layout/fragment_home.xml" value="0.12" />
+        <entry key="..\:/java for android project/Complite Full PRoject/BugBd Personal Project/Photography/Cool Photography/app/src/main/res/layout/fragment_top_photo.xml" value="0.20416666666666666" />
+        <entry key="..\:/java for android project/Complite Full PRoject/BugBd Personal Project/Photography/Cool Photography/app/src/main/res/layout/layout_side_menu.xml" value="0.18" />
+        <entry key="..\:/java for android project/Complite Full PRoject/BugBd Personal Project/Photography/Cool Photography/app/src/main/res/layout/product_item.xml" value="0.20416666666666666" />
+        <entry key="..\:/java for android project/Complite Full PRoject/BugBd Personal Project/Photography/Cool Photography/app/src/main/res/layout/product_load_stat.xml" value="0.22" />
+        <entry key="..\:/java for android project/Complite Full PRoject/BugBd Personal Project/Photography/Cool Photography/app/src/main/res/layout/slider_row_item.xml" value="0.20416666666666666" />
+        <entry key="..\:/java for android project/Complite Full PRoject/BugBd Personal Project/Photography/Cool Photography/app/src/main/res/layout/video_item.xml" value="0.16" />
+        <entry key="..\:/java for android project/Complite Full PRoject/BugBd Personal Project/Photography/Cool Photography/app/src/main/res/layout/video_row_item.xml" value="0.20416666666666666" />
+        <entry key="..\:/java for android project/Complite Full PRoject/BugBd Personal Project/Photography/Cool Photography/app/src/main/res/menu/nav_bottom_menu.xml" value="0.20416666666666666" />
+        <entry key="..\:/java for android project/Complite Full PRoject/BugBd Personal Project/Photography/Cool Photography/app/src/main/res/menu/nav_drawer.xml" value="0.20416666666666666" />
+        <entry key="..\:/java for android project/Complite Full PRoject/BugBd Personal Project/assintment/app/src/main/res/drawable-anydpi/ic_nature.xml" value="0.126" />
+        <entry key="..\:/java for android project/Complite Full PRoject/BugBd Personal Project/assintment/app/src/main/res/drawable/ic_baseline_photo_filter_24.xml" value="0.126" />
+        <entry key="..\:/java for android project/Complite Full PRoject/BugBd Personal Project/assintment/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.126" />
+        <entry key="..\:/java for android project/Complite Full PRoject/BugBd Personal Project/assintment/app/src/main/res/layout/activity_main.xml" value="0.16" />
+        <entry key="..\:/java for android project/Complite Full PRoject/BugBd Personal Project/assintment/app/src/main/res/layout/activity_main2.xml" value="0.20364583333333333" />
+        <entry key="..\:/java for android project/Complite Full PRoject/BugBd Personal Project/assintment/app/src/main/res/layout/activity_moviedetails.xml" value="0.14" />
+        <entry key="..\:/java for android project/Complite Full PRoject/BugBd Personal Project/assintment/app/src/main/res/layout/activity_nav_drawer.xml" value="0.14" />
+        <entry key="..\:/java for android project/Complite Full PRoject/BugBd Personal Project/assintment/app/src/main/res/layout/activity_no_internet.xml" value="0.16" />
+        <entry key="..\:/java for android project/Complite Full PRoject/BugBd Personal Project/assintment/app/src/main/res/layout/activity_video_play.xml" value="0.20364583333333333" />
+        <entry key="..\:/java for android project/Complite Full PRoject/BugBd Personal Project/assintment/app/src/main/res/layout/app_bar_nav_drawer.xml" value="0.20364583333333333" />
+        <entry key="..\:/java for android project/Complite Full PRoject/BugBd Personal Project/assintment/app/src/main/res/layout/category_row_item.xml" value="0.10185185185185185" />
+        <entry key="..\:/java for android project/Complite Full PRoject/BugBd Personal Project/assintment/app/src/main/res/layout/content_nav_drawer.xml" value="0.12962962962962962" />
+        <entry key="..\:/java for android project/Complite Full PRoject/BugBd Personal Project/assintment/app/src/main/res/layout/fragment_categories.xml" value="0.18" />
+        <entry key="..\:/java for android project/Complite Full PRoject/BugBd Personal Project/assintment/app/src/main/res/layout/fragment_gallery.xml" value="0.20364583333333333" />
+        <entry key="..\:/java for android project/Complite Full PRoject/BugBd Personal Project/assintment/app/src/main/res/layout/fragment_home.xml" value="0.18" />
+        <entry key="..\:/java for android project/Complite Full PRoject/BugBd Personal Project/assintment/app/src/main/res/layout/fragment_slideshow.xml" value="0.20364583333333333" />
+        <entry key="..\:/java for android project/Complite Full PRoject/BugBd Personal Project/assintment/app/src/main/res/layout/fragment_top_photo.xml" value="0.20364583333333333" />
+        <entry key="..\:/java for android project/Complite Full PRoject/BugBd Personal Project/assintment/app/src/main/res/layout/layout_side_menu.xml" value="0.20364583333333333" />
+        <entry key="..\:/java for android project/Complite Full PRoject/BugBd Personal Project/assintment/app/src/main/res/layout/movie_row_item.xml" value="0.16" />
+        <entry key="..\:/java for android project/Complite Full PRoject/BugBd Personal Project/assintment/app/src/main/res/layout/nav_header_nav_drawer.xml" value="0.20364583333333333" />
+        <entry key="..\:/java for android project/Complite Full PRoject/BugBd Personal Project/assintment/app/src/main/res/layout/product_item.xml" value="0.20364583333333333" />
+        <entry key="..\:/java for android project/Complite Full PRoject/BugBd Personal Project/assintment/app/src/main/res/layout/product_load_stat.xml" value="0.12" />
+        <entry key="..\:/java for android project/Complite Full PRoject/BugBd Personal Project/assintment/app/src/main/res/layout/slider_row_item.xml" value="0.1" />
+        <entry key="..\:/java for android project/Complite Full PRoject/BugBd Personal Project/assintment/app/src/main/res/layout/video_item.xml" value="0.20364583333333333" />
+        <entry key="..\:/java for android project/Complite Full PRoject/BugBd Personal Project/assintment/app/src/main/res/layout/video_row_item.xml" value="0.20364583333333333" />
+        <entry key="..\:/java for android project/Complite Full PRoject/BugBd Personal Project/assintment/app/src/main/res/menu/nav_bottom_menu.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.ViewTreeLifecycleOwner
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.GridLayoutManager
 import com.bugbd.omdb.databinding.FragmentHomeBinding
@@ -65,6 +66,38 @@ class HomeFragment : Fragment() {
 
         */
 
+
+        //coroutines create (launch)
+/*        runBlocking {
+            //block the Main Thread One thread each other Thread
+        }
+
+        CoroutineScope(Dispatchers.Main).launch {
+
+        }
+        GlobalScope.launch {
+
+        }
+        viewLifecycleOwner.lifecycleScope.launch {
+
+           val response =  withContext(Dispatchers.IO){
+                sliderViewModel.getSliders("movie", ConstantKey.apiKey)
+            }
+
+        }
+        lifecycleScope.launch {
+
+            val job = launch {
+
+            }
+            delay(200)
+            job.cancel()
+
+        }*/
+
+
+
+
         lifecycleScope.launch {
 
             val sliderResponse: Deferred<MutableLiveData<MovieResponse>> = async {
@@ -79,6 +112,7 @@ class HomeFragment : Fragment() {
 
                 latestMovieViewModel.getLatestMovies("movie", ConstantKey.apiKey, "2022")
             }
+
 
             setSliderAdapter(sliderResponse)
             setBatManMovieAdapter(batmanResponse)

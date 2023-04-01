@@ -10,14 +10,36 @@
         android:name="com.bugbd.omdb.View.Fragment.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/broadCastFragment"
+        android:name="com.bugbd.omdb.View.Fragment.BroadCastFragment"
+        android:label="fragment_broad_cast"
+        tools:layout="@layout/fragment_broad_cast" >
+        <action
+            android:id="@+id/action_broadCastFragment_to_liveActivity"
+            app:destination="@id/liveActivity" />
+    </fragment>
+
     <fragment
         android:id="@+id/categoriesFragment"
         android:name="com.bugbd.omdb.View.Fragment.MoviesFragment"
         android:label="fragment_categories"
         tools:layout="@layout/fragment_categories" />
+    <activity
+        android:id="@+id/liveActivity"
+        android:name="com.bugbd.omdb.View.LiveActivity"
+        android:label="activity_live"
+        tools:layout="@layout/activity_live" />
     <fragment
-        android:id="@+id/topPhotoFragment"
-        android:name="com.bugbd.omdb.View.Fragment.TopPhotoFragment"
-        android:label="fragment_top_photo"
-        tools:layout="@layout/fragment_top_photo" />
+        android:id="@+id/settingsFragment"
+        android:name="com.bugbd.omdb.View.Fragment.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/testFragment"
+        android:name="com.bugbd.omdb.View.Fragment.TestFragment"
+        android:label="fragment_test"
+        tools:layout="@layout/fragment_test" />
+
 </navigation>

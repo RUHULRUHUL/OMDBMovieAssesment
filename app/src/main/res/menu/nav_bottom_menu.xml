@@ -4,10 +4,25 @@
     <item
         android:id="@+id/homeFragment"
         android:icon="@android:drawable/stat_notify_sync"
-        android:title="Home" />
+        android:title="" />
+
+    <item
+        android:id="@+id/braodCastFragment"
+        android:icon="@drawable/ic_baseline_category_24"
+        android:title="" />
     <item
         android:id="@+id/categoriesFragment"
-        android:icon="@drawable/ic_baseline_category_24"
-        android:title="all movies" />
+        android:title="" />
+
+    <item
+        android:id="@+id/settingsFragment"
+        android:icon="@drawable/baseline_settings_24"
+        android:title="" />
+
+    <item
+        android:id="@+id/testFragment"
+        android:icon="@drawable/baseline_settings_24"
+        android:title="" />
+
 
 </menu>

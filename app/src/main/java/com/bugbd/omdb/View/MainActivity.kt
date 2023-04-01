@@ -5,11 +5,17 @@ import android.content.Intent
 import android.content.IntentFilter
 import android.net.ConnectivityManager
 import android.os.Bundle
+import android.util.TypedValue
+import android.view.View
+import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.get
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
+import androidx.navigation.findNavController
+import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.NavigationUI
 import com.bugbd.omdb.R
 import com.bugbd.omdb.databinding.ActivityMainBinding
@@ -26,15 +32,28 @@ class MainActivity : AppCompatActivity(), NetworkDetect.ConnectivityReceiverList
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
-
         checkInternetStatus()
-        //init Network Detect BroadCast Receiver
         networkDetect = NetworkDetect()
 
-        val bottomNavigationView: BottomNavigationView = findViewById(R.id.bottomNav)
-        val navController: NavController = Navigation.findNavController(this, R.id.Fragment)
-        NavigationUI.setupWithNavController(bottomNavigationView, navController)
+        val navHostFragment =
+            supportFragmentManager.findFragmentById(R.id.Fragment) as NavHostFragment
+        val navController = navHostFragment.navController
+        NavigationUI.setupWithNavController(binding.bottomNav, navController)
+        //binding.bottomNav.menu[1].isVisible = false
+    }
 
+    private fun bottomIconSize() {
+        val view: View =
+            binding.bottomNav.getChildAt(1).findViewById(com.google.android.material.R.id.icon)
+        val layoutParams = view.layoutParams
+        val displayMetrics = resources.displayMetrics
+        layoutParams.height =
+            TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 80f, displayMetrics).toInt()
+        layoutParams.width = TypedValue.applyDimension(
+            TypedValue.COMPLEX_UNIT_DIP,
+            80f, displayMetrics
+        ).toInt()
+        view.layoutParams = layoutParams
     }
 
     private fun checkInternetStatus() {

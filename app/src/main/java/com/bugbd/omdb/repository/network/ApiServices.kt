@@ -55,5 +55,4 @@ interface ApiServices {
 
     ): Call<MovieDetailResponse>
 
-
 }

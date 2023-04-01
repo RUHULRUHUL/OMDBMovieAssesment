@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_nav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            app:elevation="20dp"
+            android:background="@color/white"
+            android:clipChildren="false"
+            android:elevation="15dp"
+            android:focusableInTouchMode="true"
+            android:paddingLeft="5dp"
+            app:itemIconSize="34dp"
+            app:itemIconTint="@color/black"
+            app:itemTextColor="@color/white"
+            app:menu="@menu/nav_bottom_menu" />
+
+        <ImageView
+            android:id="@+id/tofront"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:elevation="@android:dimen/app_icon_size"
+            android:scaleType="center"
+            android:src="@drawable/icon_live" />
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

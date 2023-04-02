@@ -9,10 +9,13 @@
         android:layout_height="match_parent"
         android:background="@color/white">
 
-        <com.google.android.material.appbar.AppBarLayout
+        <androidx.appcompat.widget.Toolbar
             android:id="@+id/appBarLayout"
             android:layout_width="match_parent"
-            android:layout_height="45dp"
+            android:layout_height="?actionBarSize"
+            android:elevation="5dp"
+            android:background="@color/black"
+            app:elevation="5dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
@@ -37,14 +40,12 @@
                     app:layout_constraintHorizontal_bias="0.141"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    tools:ignore="RtlCompat">
-
-                </androidx.appcompat.widget.AppCompatTextView>
+                    tools:ignore="RtlCompat" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-        </com.google.android.material.appbar.AppBarLayout>
+        </androidx.appcompat.widget.Toolbar>
 
 
         <androidx.fragment.app.FragmentContainerView
@@ -58,16 +59,14 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/appBarLayout"
-            app:navGraph="@navigation/nav_controlar">
-
-        </androidx.fragment.app.FragmentContainerView>
+            app:navGraph="@navigation/nav_controlar" />
 
         <FrameLayout
             android:id="@+id/frameL"
             android:layout_width="match_parent"
             android:layout_height="?actionBarSize"
-            android:background="@color/black"
             android:backgroundTint="@color/white"
+            android:elevation="10dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent">
@@ -76,14 +75,13 @@
                 android:id="@+id/bottomNav"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_gravity="bottom"
                 android:background="@color/white"
                 android:backgroundTint="@color/white"
                 android:clipChildren="false"
-                android:elevation="15dp"
-                app:elevation="20dp"
-                app:itemIconSize="30dp"
-                app:itemIconTint="#FF0000"
+                android:theme="@style/NavigationItemNoRipple"
+                app:itemBackground="@drawable/background_ripple_removed"
+                app:itemIconSize="32dp"
+                app:itemIconTint="@color/menu_selected_color"
                 app:labelVisibilityMode="labeled"
                 app:menu="@menu/nav_bottom_menu" />
 
@@ -92,16 +90,17 @@
 
         <ImageView
             android:id="@+id/tofront"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:layout_gravity="center"
             android:elevation="@android:dimen/app_icon_size"
             android:paddingVertical="5dp"
             android:scaleType="fitCenter"
-            android:src="@drawable/f"
+            android:src="@drawable/live_icon"
             app:layout_constraintBottom_toBottomOf="@+id/frameL"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="ContentDescription" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

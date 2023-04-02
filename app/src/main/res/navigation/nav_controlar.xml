@@ -41,5 +41,10 @@
         android:name="com.bugbd.omdb.View.Fragment.TestFragment"
         android:label="fragment_test"
         tools:layout="@layout/fragment_test" />
+    <fragment
+        android:id="@+id/exploreFragment"
+        android:name="com.bugbd.omdb.View.Fragment.ExploreFragment"
+        android:label="fragment_explore"
+        tools:layout="@layout/fragment_explore" />
 
 </navigation>

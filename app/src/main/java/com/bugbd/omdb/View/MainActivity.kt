@@ -3,6 +3,7 @@ package com.bugbd.omdb.View
 import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
+import android.graphics.drawable.Animatable
 import android.net.ConnectivityManager
 import android.os.Bundle
 import android.util.TypedValue
@@ -10,6 +11,7 @@ import android.view.View
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import androidx.core.view.get
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.NavController
@@ -17,9 +19,11 @@ import androidx.navigation.Navigation
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.NavigationUI
+import androidx.vectordrawable.graphics.drawable.AnimatedVectorDrawableCompat
 import com.bugbd.omdb.R
 import com.bugbd.omdb.databinding.ActivityMainBinding
 import com.bugbd.omdb.NetworkDetect
+import com.bumptech.glide.Glide
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -35,11 +39,21 @@ class MainActivity : AppCompatActivity(), NetworkDetect.ConnectivityReceiverList
         checkInternetStatus()
         networkDetect = NetworkDetect()
 
-        val navHostFragment =
-            supportFragmentManager.findFragmentById(R.id.Fragment) as NavHostFragment
+        val navHostFragment = supportFragmentManager.findFragmentById(R.id.Fragment) as NavHostFragment
         val navController = navHostFragment.navController
         NavigationUI.setupWithNavController(binding.bottomNav, navController)
-        //binding.bottomNav.menu[1].isVisible = false
+
+        navController.addOnDestinationChangedListener { _, destination, _ ->
+            when (destination.id) {
+                R.id.categoriesFragment -> {
+                    Glide.with(this).load(R.drawable.live_icon).into(binding.tofront)
+                }
+                else -> {
+                    binding.tofront.setImageDrawable(ContextCompat.getDrawable(this, R.drawable.live_icon))
+                }
+            }
+        }
+
     }
 
     private fun bottomIconSize() {

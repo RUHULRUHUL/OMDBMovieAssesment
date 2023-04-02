@@ -44,60 +44,6 @@ class HomeFragment : Fragment() {
         //init ViewModel Object
         initViewModel()
 
-        /*
-        launch coroutines in MainThread then Create Background 3 async Thread for
-        concurrently data get in OmDb Movie Server. when we get response concurrently
-        then data send immediately Adapter for Ui  recommended data preview in RecyclerView
-
-        1.getSliders
-            use case:
-                Five  movie  Banner Then we can show carousel Sliders(auto Sliders)
-
-        2.Batman Movies
-            use case:
-                query title: "Batman"
-
-        3.Latest Movies
-            use case:
-                query title: "movie" as you like
-                year       : 2022
-        note:
-             response Observer of the MutableLiveData
-
-        */
-
-
-        //coroutines create (launch)
-/*        runBlocking {
-            //block the Main Thread One thread each other Thread
-        }
-
-        CoroutineScope(Dispatchers.Main).launch {
-
-        }
-        GlobalScope.launch {
-
-        }
-        viewLifecycleOwner.lifecycleScope.launch {
-
-           val response =  withContext(Dispatchers.IO){
-                sliderViewModel.getSliders("movie", ConstantKey.apiKey)
-            }
-
-        }
-        lifecycleScope.launch {
-
-            val job = launch {
-
-            }
-            delay(200)
-            job.cancel()
-
-        }*/
-
-
-
-
         lifecycleScope.launch {
 
             val sliderResponse: Deferred<MutableLiveData<MovieResponse>> = async {

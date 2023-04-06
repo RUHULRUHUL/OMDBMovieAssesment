@@ -9,4 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="navigation_item_background_tint">#FFFFFFFF</color>
     <color name="red">#FF0000</color>
+    <color name="them_color">#FFF5E7</color>
 </resources>

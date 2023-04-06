@@ -15,6 +15,16 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="SplashThemePro" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/poco_logo</item>
+        <item name="colorPrimary">@color/them_color</item>
+        <item name="colorPrimaryVariant">@color/them_color</item>
+        <item name="colorOnPrimary">@color/them_color</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">false</item>
+        <item name="android:navigationBarColor">@color/white</item>
+    </style>
+
     <style name="NavigationItemNoRipple">
         <item name="android:colorControlHighlight">@android:color/transparent</item>
     </style>

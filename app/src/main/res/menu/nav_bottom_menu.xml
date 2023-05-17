@@ -4,25 +4,22 @@
     <item
         android:id="@+id/homeFragment"
         android:icon="@drawable/baseline_add_home_24"
-        android:title="" />
+        android:title="Home" />
 
     <item
-        android:id="@+id/exploreFragment"
-        android:icon="@drawable/baseline_explore_24"
-        android:title="" />
-    <item
         android:id="@+id/categoriesFragment"
-        android:title="" />
+        android:icon="@drawable/baseline_explore_24"
+        android:title="Explore" />
 
     <item
         android:id="@+id/settingsFragment"
         android:icon="@drawable/baseline_mark_chat_unread_24"
-        android:title="" />
+        android:title="Chat" />
 
     <item
         android:id="@+id/testFragment"
         android:icon="@drawable/baseline_person_3_24"
-        android:title="" />
+        android:title="Profile" />
 
 
 </menu>

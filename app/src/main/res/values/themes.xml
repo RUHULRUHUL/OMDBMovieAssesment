@@ -15,6 +15,15 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="MainActivityTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <item name="colorAccent">@color/black</item>
+        <item name="android:windowSoftInputMode">adjustResize|stateAlwaysHidden</item>
+    </style>
+
     <style name="SplashThemePro" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="android:windowBackground">@drawable/poco_logo</item>
         <item name="colorPrimary">@color/them_color</item>

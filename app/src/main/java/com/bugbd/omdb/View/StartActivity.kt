@@ -12,7 +12,7 @@ class StartActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         lifecycleScope.launch {
             delay(200)
-            startActivity(Intent(this@StartActivity, MainActivity::class.java))
+            startActivity(Intent(this@StartActivity, SmoothBottoomActivity::class.java))
             finish()
         }
     }

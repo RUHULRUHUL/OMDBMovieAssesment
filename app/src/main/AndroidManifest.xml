@@ -8,7 +8,7 @@
     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
 
     <application
-        android:name="com.bugbd.omdb.application.MovieApplication"
+        android:name=".application.MovieApplication"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -20,6 +20,14 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".View.SmoothBottoomActivity"
+            android:theme="@style/MainActivityTheme"
+            android:exported="false" />
+        <activity
+            android:name=".View.ChipActivity"
+            android:exported="false"
+            android:theme="@style/MainActivityTheme" />
+        <activity
             android:name=".View.LiveActivity"
             android:exported="false" />
         <activity
@@ -28,7 +36,6 @@
         <activity
             android:name=".View.MoviedetailsActivity"
             android:exported="false" />
-
         <activity
             android:name=".View.StartActivity"
             android:exported="true"
@@ -47,11 +54,9 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-
         <activity
             android:name=".View.MainActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true" />
     </application>
 
 </manifest>

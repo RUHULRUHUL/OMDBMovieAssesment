@@ -81,5 +81,10 @@ dependencies {
     implementation "com.google.dagger:hilt-android:$hilt_version"
     kapt "com.google.dagger:hilt-compiler:$hilt_version"
 
+    implementation 'com.github.ismaeldivita:chip-navigation-bar:1.4.0'
+    implementation 'com.github.ibrahimsn98:SmoothBottomBar:1.7.9'
+
+
+
 }
 

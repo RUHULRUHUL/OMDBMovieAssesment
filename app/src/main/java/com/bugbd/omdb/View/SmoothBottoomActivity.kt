@@ -33,7 +33,7 @@ class SmoothBottoomActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
-            R.id.homeFragment ->{
+            R.id.homeFragment -> {
                 Toast.makeText(this, "Home fragment", Toast.LENGTH_SHORT).show()
             }
 

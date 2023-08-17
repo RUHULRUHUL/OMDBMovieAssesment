@@ -95,7 +95,7 @@
             android:layout_gravity="center"
             android:elevation="@android:dimen/app_icon_size"
             android:paddingVertical="5dp"
-            android:scaleType="fitCenter"
+            android:scaleType="centerCrop"
             android:src="@drawable/live_icon"
             app:layout_constraintBottom_toBottomOf="@+id/frameL"
             app:layout_constraintEnd_toEndOf="parent"

@@ -16,25 +16,6 @@ import javax.inject.Singleton
 @Module
 object RetrofitInstance {
 
-    /*Retrofit Instance */
-/*
-    private val retrofit by lazy {
-
-        val interceptor =
-            HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY)
-        val client = OkHttpClient.Builder().addInterceptor(interceptor).build()
-
-        Retrofit.Builder()
-            .baseUrl(ConstantKey.BaseUrl)
-            .client(client)
-            .addConverterFactory(GsonConverterFactory.create())
-            .build()
-    }
-
-    val api: ApiServices by lazy {
-        retrofit.create(ApiServices::class.java)
-    }*/
-
     @Singleton
     @Provides
     fun getRetrofit(): Retrofit {

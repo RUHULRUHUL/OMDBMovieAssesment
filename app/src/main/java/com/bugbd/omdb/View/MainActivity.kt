@@ -46,14 +46,15 @@ class MainActivity : AppCompatActivity(), NetworkDetect.ConnectivityReceiverList
         NavigationUI.setupWithNavController(binding.bottomNav, navController)
         navController.addOnDestinationChangedListener { _, destination, _ ->
             when (destination.id) {
-                R.id.categoriesFragment -> {
-                    Glide.with(this).load(com.bugbd.omdb.R.drawable.live_icon).into(binding.tofront)
+                R.id.settingsFragment -> {
+                    Glide.with(this).load(R.drawable.live_icon).into(binding.tofront)
+                    Toast.makeText(this, "center button clicked", Toast.LENGTH_SHORT).show()
                 }
                 else -> {
                     binding.tofront.setImageDrawable(
                         ContextCompat.getDrawable(
                             this,
-                            com.bugbd.omdb.R.drawable.live_icon
+                            R.drawable.live_icon
                         )
                     )
                 }

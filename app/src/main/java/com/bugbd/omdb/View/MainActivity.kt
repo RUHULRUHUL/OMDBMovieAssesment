@@ -66,7 +66,7 @@ class MainActivity : AppCompatActivity(), NetworkDetect.ConnectivityReceiverList
         super.onCreateOptionsMenu(menu)
         menuInflater.inflate(R.menu.nav_bottom_menu,menu)
         val menuItem  = menu?.findItem(R.id.exploreFragment)
-        Glide.with(this).asBitmap().load(R.drawable.live_gif)
+        /*Glide.with(this).asBitmap().load(R.drawable.live_gif)
             .into(object : SimpleTarget<Bitmap?>(35, 35) {
                 override fun onResourceReady(
                     resource: Bitmap,
@@ -78,7 +78,7 @@ class MainActivity : AppCompatActivity(), NetworkDetect.ConnectivityReceiverList
                         }
                     }
                 }
-            })
+            })*/
 
         return true
     }
